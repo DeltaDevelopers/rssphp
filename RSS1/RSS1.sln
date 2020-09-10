@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "RSS1", "..\..\..\Repositorios\rssphp\RSS1\RSS1\RSS1.phpproj", "{DF044EF1-F393-4A07-8FCF-B012CFD0B0BA}"
+Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "RSS1", "RSS1\RSS1.phpproj", "{DF044EF1-F393-4A07-8FCF-B012CFD0B0BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
