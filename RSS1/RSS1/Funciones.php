@@ -5,11 +5,19 @@ class Funciones
  public function ConteoDeArchivos()
   {
     //Esta función devuelve el numero de archicos .mp3 de una carpeta (Rediseñar)
-    //scandir(__DIR__ . '/snaps');
-    $mp3Totales = scandir('/Audio', 1);
-    array_pop($mp3Totales);
-    array_pop($mp3Totales);
+
+    //Obtiene la URL del servidor actual
+    $ruta = 'http://' . $_SERVER['HTTP_HOST'] . '/audios/';
+
+    $mp3Totales = scandir($ruta, 1);
+
+    array_pop($mp3Totales);    
+    array_pop($mp3Totales); //Esta linea esta doble    
     $mp3Totales = count($mp3Totales);
+
+    //Las 4 lineas anteriores se pueden resumir en
+    $mp3Totales = count(scandir($ruta));
+
     return $mp3Totales;
   }
 
