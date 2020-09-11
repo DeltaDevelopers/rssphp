@@ -1,7 +1,7 @@
 <?php
 
 include_once 'Funciones.php';
-$saluod = "Genera un RSS a partir de los archivos mp3 de una carpeta";
+$saluod = "Genera un RSS a partir de los archivos mp3 de una carpeta".'<br>';
 
 echo $saluod;
 

@@ -18,6 +18,7 @@
     <Compile Include="clases\RssGenerador.php" />
     <Compile Include="Funciones.php" />
     <Compile Include="CrearRss.php" />
+    <Compile Include="index.php" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="clases\" />
