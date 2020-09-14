@@ -1,15 +1,30 @@
 <?php
+class Funciones{  
 
-include_once 'Funciones.php';
-$saluod = "Genera un RSS a partir de los archivos mp3 de una carpeta".'<br>';
+  public function ConteoDeArchivos(){
+    //Esta función devuelve el numero de archivos .mp3 de una carpeta (Rediseñar)
 
-echo $saluod;
+    //Obtiene la URL del servidor actual(pendiente)
+   /* $ruta = 'http://' . $_SERVER['HTTP_HOST'] . '/audios';*/
 
-//La funcion var_dump nos ayuda a visualizar el valor de una variable sin tener que detener la 
-//ejecucion del scrip
-var_dump($saluod);
+   $ruta="../audios";
+   $mp3Totales = scandir($ruta, 1);
+    $mp3Totales = count(scandir($ruta))-2;
+    return $mp3Totales;
+     } 
+  public function ListaDeNombres(){
+  //Esta función devuelve en un arreglo los nombres de los archivos
+     $listaDeNombres=scandir("../audios",1);
+        array_pop($listaDeNombres);
+	array_pop($listaDeNombres);
+//Estas lineas repetidas son para eliminar "." y ".." de los elementos del Array
 
-//llamamos a la funcion de conteo
-$funciones = new Funciones();
+       //foreach($listaDeNombres as $nombre){
+        //$listaDeNombres=$nombre;
+        //}
 
-var_dump($funciones->ConteoDeArchivos());
+        return $listaDeNombres;
+     }
+
+  }
+
